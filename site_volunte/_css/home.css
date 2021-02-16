@@ -1,0 +1,129 @@
+body{
+    background-color: rgb(60, 0, 129);
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Poetsen;
+    src: url('../_fonts/Poetsen.ttf');
+}
+
+.item_menu{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#container_intro{
+    height: 580px;
+    background-image: url("../_imagens/intro_2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-left: 50px;
+}
+#container_intro h1{
+    font-size: 55pt;
+    color: rgb(123, 27, 233);
+    font-family: Poetsen;
+    font-weight: bold;
+    text-shadow: 2px 2px 1px rgb(53, 0, 114);
+}
+#container_intro h2{
+    font-size: 30pt;
+    color: white;
+    font-family: Poetsen;
+    font-weight: bold;
+    text-shadow: 2px 2px 1px black;
+}
+
+#container_trab{
+    height: 800px;
+    background-color: rgb(197, 197, 197);
+}
+
+#container_sobre{
+    background-color: rgb(48, 0, 102);
+    color: whitesmoke;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+#container_sobre h1{
+    font-size: 50pt;
+    color: white;
+    font-family: Poetsen;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 3px 3px 1px rgb(123, 27, 233);
+}
+#container_sobre p{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    width: 90%;
+    font-size: 14pt;
+    color: white;
+    font-family: Helvetica;
+    text-align: center;
+    /*text-shadow: 1px 1px 1px rgb(255, 0, 55);*/
+}
+
+@media screen and (max-width:960px){
+
+    .container_header{
+        height: 50px;
+    }
+
+    #container_body{
+        margin-top: 50px;
+    }
+
+    #container_intro{
+        height: 530px;
+    }
+
+    .bg_header{
+        background-color: rgb(48, 0, 102);
+        opacity: 1;
+    }
+
+    .header img{
+        margin-left: 30px;
+    }
+
+    .menu{display: none;}
+
+    .btn_menu{display: block;}
+
+    /*#sidebar{
+        display: block;
+    }*/
+}
+
+@media screen and (max-width:500px){
+    #container_intro h1{
+        font-size: 43pt;
+    }
+    #container_intro h2{
+        font-size: 20pt;
+    }
+
+    #container_sobre h1{
+        font-size: 40pt;
+    }
+}
+
+@media screen and (max-width:390px){
+    #container_intro h1{
+        font-size: 33pt;
+    }
+    #container_intro h2{
+        font-size: 15pt;
+    }
+
+    #container_sobre h1{
+        font-size: 30pt;
+    }
+}

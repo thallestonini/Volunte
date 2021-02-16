@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8"/>
+        <title> Voluntê </title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+            crossorigin="anonymous"
+        >
+
+        <link rel="stylesheet" href="_css\header.css">
+        <link rel="stylesheet" href="_css\sidebar.css">
+        <link rel="stylesheet" href="_css\home.css">
+        <link rel="stylesheet" href="_css\footer.css">
+
+        <script type="text/javascript" src="_js\jquery.js"></script>
+        <script type="text/javascript" src="_js\home.js"></script>
+    </head>
+
+    <body>
+
+        <script type="text/javascript" src="_js\sidebar.js"></script>
+
+        <div id="sidebar">
+            <nav id="sidebar_menu2">
+                <ul>
+                    <li><a href="cadastro.html">Cadastrar-se</a></li>
+                    <li><a href="login.html">Entrar</a></li>
+                </ul>
+            </nav>
+
+            <div id="sidebar_separador"></div>
+
+            <nav id="sidebar_menu">
+                <ul>
+                    <li><a href="#container_trab">Trabalhos Voluntários</a></li>
+                    <li><a href="#container_sobre">Sobre Nós</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="container_header">
+
+            <div class="bg_header"></div>
+
+            <div class="header">
+
+                <img
+                    src="_imagens\logo_b.png"
+                    title="Volunté"
+                    alt="logo volunte"
+                >
+
+                <h1> Volunté </h1>
+
+                <nav id="menu2" class="menu">
+                    <ul>
+                        <li><a href="cadastro.html">Cadastrar-se</a></li>
+                        <li><a href="login.html">Entrar</a></li>
+                    </ul>
+                </nav>
+
+                <div id="separador" class="menu"></div>
+
+                <nav id="menu" class="menu">
+
+                    <ul class="nav">
+                        <li><a href="#container_trab" onclick="mostraConteudo('#container_trab')">Trabalhos Voluntários</a></li>
+                        <li><a href="#container_sobre" onclick="mostraConteudo('#container_sobre')">Sobre Nós</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+
+                <div class="btn_menu" onclick="acaoMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+        <div id="container_body">
+
+            <div id="container_intro" class="item_menu">
+                <h1>Seja</h1>
+                <h1>bem-vindo...</h1>
+                <h2>e fique à vontade!</h2>
+            </div>
+
+            <div id="container_trab" class="item_menu">
+
+            </div>
+
+            <div id="container_sobre" class="item_menu">
+                <h1>Somos loucos...</h1>
+                <h1>para mudar o mundo!</h1>
+                <p>Volunté é um projeto criado com a itenção de ser o elo de ligação entre quem quer mudar o mundo e aqueles que já
+                    estão mudando o mundo! <br><br>
+                    Do francês, volunté significa vontade, e foi justamente essa a nossa inspiração, a vonta de fazer a diferença. Acreditamos
+                    que, assim como nós, existem milhares de pessoas espalhadas pelo mundo que estão loucas para fazer algo, mas muitas delas
+                    não sabem como... é aí que nós entramos :) <br><br>
+                    Se você é alguém que  deseja fazer algo diferente, que está inconformado(a) com a forma como as coisas tem andado.. parabéns,
+                     você está no lugar certo. Aqui você vai encontrar pessoas como você, algumas que estão buscando formas de mudar o mundo, outras
+                     que estão oferencendo formas de fazer isso!
+                </p>
+            </div>
+        </div>
+
+        <div id="container_footer">
+
+        </div>
+
+        <!--script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,135 @@
+body{
+    background-color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.container_form{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0%);
+    float: left;
+    margin-top: 150px;
+}
+
+.container_form p{
+    color: gray;
+    margin-bottom: 2px;
+}
+
+.campo{
+    font-family: Helvetica;
+    font-size: 11pt;
+    margin-bottom: 15px;
+    padding: 5px;
+    border: 1px solid rgb(188, 129, 255);
+    border-radius: 3px;
+    width: 500px;
+    height: 40px;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+    width: 100px;
+}
+
+.mes_nasc{
+    font-family: Helvetica;
+    font-size: 11pt;
+    margin-bottom: 15px;
+    padding: 5px;
+    border: 1px solid rgb(188, 129, 255);
+    color: grey;
+    border-radius: 3px;
+    width: 150px;
+    height: 40px;
+}
+
+label{
+    margin-right: 30px;
+    color: gray;
+}
+
+#btn-cadastrar{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    background-color: rgb(139, 47, 245);
+    color: white;
+    width: 60%;
+    height: 40px;
+    border: none;
+    border-radius: 100px;
+    margin-top: 10px;
+}
+#btn-cadastrar:hover{
+    background-color: rgb(149, 84, 224);
+    color: white;
+    cursor: pointer;
+}
+
+.entrar{
+    position: relative;
+    margin-top: 10px;
+}
+
+.entrar p{
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.entrar a{
+    color: rgb(139, 47, 245);
+    text-decoration: none;
+}
+.entrar a:hover{
+    color: rgb(149, 84, 224);
+}
+
+@media screen and (max-width:550px){
+
+    .container_form{
+        width: 80%;
+    }
+    .container_form form{
+        position: relative;
+    }
+
+	.campo{
+        position: relative;
+        width: 100%;
+    }
+
+    #data_nasc{
+        position: relative;
+        width: 100%;
+    }
+
+    #data_nasc .campo{
+        left: 0;
+        transform: translateX(0);
+    }
+
+    #genero{
+        position: relative;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:450px){
+    #data_nasc{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:315px){
+    #data_nasc{
+        width: 100%;
+    }
+}

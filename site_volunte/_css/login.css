@@ -1,0 +1,126 @@
+body{
+    background-color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.container_form{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0%);
+    float: left;
+    margin-top: 150px;
+
+}
+
+.container_form p{
+    color: gray;
+    margin-bottom: 2px;
+}
+
+.campo{
+    font-family: Helvetica;
+    font-size: 11pt;
+    margin-bottom: 15px;
+    padding: 5px;
+    border: 1px solid rgb(188, 129, 255);
+    border-radius: 3px;
+    width: 500px;
+    height: 40px;
+}
+
+#btn-entrar{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    background-color: rgb(139, 47, 245);
+    color: white;
+    width: 60%;
+    height: 40px;
+    border: none;
+    border-radius: 100px;
+    margin-top: 10px;
+}
+#btn-entrar:hover{
+    background-color: rgb(149, 84, 224);
+    color: white;
+    cursor: pointer;
+}
+
+.recupera_senha{
+    position: relative;
+    margin-top: 10px;
+}
+
+.recupera_senha p{
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.recupera_senha a{
+    color: rgb(139, 47, 245);
+    text-decoration: none;
+}
+.recupera_senha a:hover{
+    color: rgb(149, 84, 224);
+}
+
+.separador{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 1px;
+    background-color: rgb(194, 194, 194);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.cadastro{
+    position: relative;
+}
+
+.cadastro p{
+    position: relative;
+    text-align: center;
+    font-size: 12pt;
+    font-weight: bold;
+    color: black;
+}
+
+#btn-cadastro{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    background-color: white;
+    color: rgb(110, 110, 110);
+    width: 60%;
+    height: 40px;
+    border-width: 2px;
+    border-style: solid; 
+    border-color: rgb(110, 110, 110);
+    border-radius: 100px;
+    margin-top: 10px;
+}
+#btn-cadastro:hover{
+    background-color:rgb(110, 110, 110);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:550px){
+
+    .container_form{
+        width: 80%;
+    }
+    .container_form form{
+        position: relative;
+    }
+
+	.campo{
+        position: relative;
+        width: 100%;
+    }
+}

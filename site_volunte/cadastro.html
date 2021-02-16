@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8"/>
+        <title> Voluntê </title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+            crossorigin="anonymous"
+        >
+
+        <link rel="stylesheet" href="_css\header_2.css">
+        <link rel="stylesheet" href="_css\cadastro.css">
+    </head>
+    <body>
+
+        <div class="container_header">
+
+            <div class="bg_header"></div>
+        
+            <div class="header">
+        
+                <img
+                    src="_imagens\logo_b.png"
+                    title="Voluntê"
+                    alt="logo volunte"
+                    height=80px
+                    usemap="#home_map"
+                >
+                <map name="home_map">
+                    <!-- coordenadas são pontos x e y superior esquerdo + x e y inferior direito -->
+                    <area shape="rect" coords="0,0,80,80" href="home.html">
+                </map>
+        
+                <!--h1> Voluntê </h1-->
+        
+                <!--nav id="menu">
+                    <ul>
+                        <li><a href="#">Trabalhos Voluntários</a></li>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">Contatos</a></li>
+                    </ul>
+                </nav>
+            
+                <div class="separador"></div>
+            
+                <nav id="menu2">
+                    <ul>
+                        <li><a href="#">Cadastrar-se</a></li>
+                        <li><a href="#">Entrar</a></li>
+                    </ul>
+                </nav-->
+            </div>
+        </div>
+
+        <div class="container_form">
+            <form>
+                <input class="campo" type="text" name="Nome" placeholder="Nome" required autofocus> <br>
+                <input class="campo" type="email" name="E-mail" placeholder="E-mail" required> <br>
+                <input class="campo" type="email" name="CEmail" placeholder="Confirmar e-mail" size="60%" required> <br>
+                <input class="campo" type="password" name="Senha" placeholder="Senha" size="60%" required> <br>
+
+                <div id="data_nasc">
+                    <p>Data de Nascimento</p>
+                    <input class="campo" type="number" name="dia_nasc" placeholder="Dia" required min="1" max="31">
+                    <select class="mes_nasc" name="mes_nasc" placeholder="Mês">
+                        <option value="" selected> Mês </option>
+                        <option value="mes_jan"> Janeiro </option>
+                        <option value="mes_fev"> Fevereiro </option>
+                        <option value="mes_mar"> Março </option>
+                        <option value="mes_mar"> Abril </option>
+                        <option value="mes_mai"> Maio </option>
+                        <option value="mes_jun"> Junho </option>
+                        <option value="mes_jul"> Julho </option>
+                        <option value="mes_ago"> Agosto </option>
+                        <option value="mes_set"> Setembro </option>
+                        <option value="mes_out"> Outubro </option>
+                        <option value="mes_nov"> Novembro </option>
+                        <option value="mes_dez"> Dezembro </option>
+                    </select>
+                    <input class="campo" type="number" name="ano_nasc" placeholder="Ano" required min="1900" max="2019"> <br>
+                </div>
+
+                <div id="genero">
+                    <label><input type="radio" name="ra_gen" value="masculino" checked> Masculino </label>
+                    <label><input type="radio" name="ra_gen" value="feminino"> Feminino </label> <br>
+                </div>
+
+                <input type="submit" name="btn-cadastrar" id="btn-cadastrar" value="Cadastrar-se" formaction="cadastro.php" formmethod="POST"> <br>
+
+                <div class="entrar">
+                    <p>Já é cadastrado?
+                        <a href="login.html"> Entrar </a>
+                    </p>
+                </div>
+            </form>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>
